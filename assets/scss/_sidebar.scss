@@ -1,3 +1,53 @@
+
 #sidebar {
+    position: fixed;
     background: #f00;
+    height: 100vh;
+    padding-right: 39px;
+    padding-left: 39px;
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+        height: 20%;
+        padding-top: 62px;
+        text-align: center;
+    }
+
+    nav {
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                position: relative;
+                margin-bottom: 35px;
+                a {
+                    i {
+                        font-size: 18px;
+                        color: $gray;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    white-space: nowrap;
+                    left: 20px;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .toggle-mode {
+        height: 20%;
+        display: flex;
+        align-items: flex-end;
+    }
 }
